@@ -1,0 +1,43 @@
+// <!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+   <title>Document</title>
+ </head>
+ <body>
+
+    
+    
+
+     <!-- Login Form -->
+    
+     <div class="card">
+        <div class="card-header">
+          Login
+        </div>
+        <div class="card-body">
+          <form action="/login" method="POST">
+            <div class="form-group">
+              <label for="emailLogin">Email</label>
+              <input type="email" class="form-control" id="emailLogin" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="passwordLogin">Password</label>
+              <input type="password" class="form-control" id="passwordLogin" name="password" required>
+            </div>
+            <button type="submit" class="btn btn-success">Login</button>
+          </form>
+        </div>
+        <a href="/register" style= "margin-left :50px;  font-size: 18px; 
+        color: #4CAF50; 
+        text-decoration: none; 
+        font-weight: bold; ">Register</a>
+    </div>
+
+
+   
+ </body>
+</html>
