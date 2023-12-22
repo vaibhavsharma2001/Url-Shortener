@@ -2,12 +2,12 @@ const express = require('express')
 const mongoose = require('mongoose')
 const passport=require('passport')
 const session = require('express-session');  //?retryWrites=true&w=majority const passport=require('passport')
-const passportjs=require('../Url-Shortener/config/passport')
+const passportjs=require('../config/passport')
 const LocalStrategy = require('passport-local').Strategy;
 const bcrypt = require('bcrypt');
 const app=express()
-const User=require('../Url-Shortener/models/user')
-const ShortUrl=require('../Url-Shortener/models/shortUrl')
+const User=require('../models/user')
+const ShortUrl=require('../models/shortUrl')
 //mongodb+srv://Vaibhav11:0987654321@cluster0.7ggft8m.mongodb.net
 const db=mongoose.connect('mongodb+srv://Vaibhav11:0987654321@cluster0.7ggft8m.mongodb.net/test', {
    useNewUrlParser: true, useUnifiedTopology: true
