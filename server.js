@@ -9,7 +9,7 @@ const app=express()
 const User=require('./models/user')
 const ShortUrl=require('./models/shortUrl')
 //mongodb+srv://Vaibhav11:0987654321@cluster0.7ggft8m.mongodb.net
-const db=mongoose.connect('mongodb+srv://vaibhav1234:poiuytrewq@newcluster.dvgt1up.mongodb.net/urldata', {
+const db=mongoose.connect('mongodb+srv://vaibhav1234:<putyour atlaspassword>@newcluster.dvgt1up.mongodb.net/urldata', {
    useNewUrlParser: true, useUnifiedTopology: true
 }).then(()=>{
   console.log("connected")
